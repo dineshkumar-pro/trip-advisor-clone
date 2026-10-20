@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WanderWise — Travel ideas & reviews</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#" aria-label="WanderWise home"><span class="brand-mark">✦</span><span>WanderWise</span></a>
+    <nav class="main-nav" aria-label="Main navigation">
+      <a href="#stays">Hotels</a><a href="#things">Things to do</a><a href="#restaurants">Restaurants</a><a href="#inspiration">Travel stories</a>
+    </nav>
+    <div class="header-actions"><button class="text-button" id="signIn">Sign in</button><button class="primary small" id="join">Join</button></div>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">☰</button>
+  </header>
+
+  <main>
+    <section class="intro">
+      <p class="eyebrow">YOUR NEXT GREAT TRIP STARTS HERE</p>
+      <h1>Explore the world.<br><span>Find your somewhere.</span></h1>
+      <p class="intro-copy">Ideas, places and experiences to help you plan a trip worth remembering.</p>
+      <div class="category-tabs" role="tablist" aria-label="Search category">
+        <button class="tab active" data-category="All">⌕ <span>Search all</span></button>
+        <button class="tab" data-category="Hotels">▱ <span>Hotels</span></button>
+        <button class="tab" data-category="Things to do">✧ <span>Things to do</span></button>
+        <button class="tab" data-category="Restaurants">♨ <span>Restaurants</span></button>
+      </div>
+      <form class="search-bar" id="searchForm">
+        <span class="search-icon">⌕</span>
+        <input id="destination" type="search" placeholder="Places to go, hotels, restaurants..." aria-label="Search destinations">
+        <button class="primary" type="submit">Search</button>
+      </form>
+      <p class="search-feedback" id="searchFeedback" aria-live="polite"></p>
+    </section>
+
+    <section class="hero container">
+      <img src="images/hero-coast.svg" alt="Illustration of a sunny tropical coast">
+      <div class="hero-overlay">
+        <span class="pill">TRAVEL INSPIRATION</span>
+        <h2>Make room for<br>the unexpected.</h2>
+        <p>Discover places that turn a trip into a story.</p>
+        <a class="light-button" href="#inspiration">Find your next adventure <span>→</span></a>
+      </div>
+    </section>
+
+    <section class="section container" id="stays">
+      <div class="section-heading"><div><p class="eyebrow">A LITTLE INSPIRATION</p><h2>Places worth the journey</h2><p>Save these ideas for your next getaway.</p></div><a class="view-link" href="#inspiration">Explore more <span>→</span></a></div>
+      <div class="destination-grid">
+        <article class="destination-card"><img src="images/bali.svg" alt="Tropical beach and palm trees"><div class="card-copy"><span class="tag">BEACH ESCAPE</span><h3>Bali, Indonesia</h3><p>Temples, turquoise water and slow mornings.</p><div class="rating"><span>●●●●●</span> <small>Traveller favourite</small></div></div></article>
+        <article class="destination-card"><img src="images/paris.svg" alt="Parisian buildings and Eiffel Tower illustration"><div class="card-copy"><span class="tag">CITY BREAK</span><h3>Paris, France</h3><p>Beautiful streets, art and café culture.</p><div class="rating"><span>●●●●●</span> <small>Culture & food</small></div></div></article>
+        <article class="destination-card"><img src="images/mountains.svg" alt="Green mountain landscape"><div class="card-copy"><span class="tag">OUTDOOR ADVENTURE</span><h3>Mountain escapes</h3><p>Fresh air, scenic trails and quiet views.</p><div class="rating"><span>●●●●●</span> <small>Nature picks</small></div></div></article>
+      </div>
+    </section>
+
+    <section class="experience-band" id="things"><div class="container experience-content"><div><p class="eyebrow">MAKE IT MEMORABLE</p><h2>Do more than just<br>see the sights.</h2><p>Find local experiences, hidden gems and little moments that make a place special.</p><a class="dark-button" href="#restaurants">Explore experiences <span>→</span></a></div><div class="experience-art"><img src="images/food.svg" alt="Illustration of a colourful local dish"></div></div></section>
+
+    <section class="section container" id="restaurants"><div class="section-heading"><div><p class="eyebrow">TASTE THE DESTINATION</p><h2>Good food, great memories</h2><p>From street-food favourites to long lunches, follow your appetite.</p></div></div><div class="food-feature"><img src="images/food.svg" alt="Colourful food illustration"><div><span class="tag">LOCAL FLAVOURS</span><h3>Take the scenic route to your next meal.</h3><p>Ask locals what they love, try something new and leave a little room for dessert.</p><a class="view-link" href="#inspiration">Get inspired <span>→</span></a></div></div></section>
+
+    <section class="newsletter" id="inspiration"><div class="container newsletter-inner"><div><p class="eyebrow">A NOTE FROM THE WORLD</p><h2>Get inspired to go places.</h2><p>Fresh travel ideas for wherever you want to wander next.</p></div><form id="newsletterForm"><label for="email">Your email address</label><div class="email-row"><input id="email" type="email" placeholder="you@example.com" required><button class="primary" type="submit">Sign me up</button></div><p class="form-note" id="newsletterFeedback" aria-live="polite">Demo form — no email will be sent.</p></form></div></section>
+  </main>
+
+  <footer class="site-footer"><div class="container footer-inner"><a class="brand" href="#"><span class="brand-mark">✦</span><span>WanderWise</span></a><p>A travel discovery demo inspired by travel-review websites. Not affiliated with Tripadvisor.</p><div><a href="#stays">Destinations</a><a href="#things">Experiences</a><a href="#inspiration">Stories</a></div><small>© 2026 WanderWise · Student practice project</small></div></footer>
+  <script src="script.js"></script>
+</body>
+</html>
